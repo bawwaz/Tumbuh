@@ -212,7 +212,7 @@ class HomeView extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 25.0),
                 child: Text(
-                  "Business Console",
+                  "My Business Inventory",
                   style: GoogleFonts.poppins(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
@@ -228,42 +228,67 @@ class HomeView extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 25.0),
-                  child: Container(
-                    height: 172,
-                    width: 265,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(color: Color(0xff0D062D)),
-                      borderRadius: BorderRadius.circular(20),
+                Stack(children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 25.0),
+                    child: Container(
+                      height: 172,
+                      width: 265,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(color: Color(0xff0D062D)),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 15.0),
-                  child: Container(
-                    height: 172,
-                    width: 265,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(color: Color(0xff0D062D)),
-                      borderRadius: BorderRadius.circular(20),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 18.0, left: 37),
+                    child: Text(
+                      "Business Name",
+                      style: GoogleFonts.poppins(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 15.0),
-                  child: Container(
-                    height: 172,
-                    width: 265,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(color: Color(0xff0D062D)),
-                      borderRadius: BorderRadius.circular(20),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 43.0, left: 38),
+                    child: Text(
+                      "business desc",
+                      style: GoogleFonts.poppins(
+                          fontSize: 15,
+                          color: Color.fromARGB(255, 115, 115, 115),
+                          fontWeight: FontWeight.normal),
                     ),
                   ),
-                ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 130.0, left: 245),
+                    child: Icon(Icons.edit),
+                  )
+                ]),
+                Stack(children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: Container(
+                      height: 172,
+                      width: 80,
+                      decoration: BoxDecoration(
+                        color: Color(0xff0D062D),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 40.0, top: 60),
+                    child: Text(
+                      "+",
+                      style: GoogleFonts.poppins(
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w300),
+                    ),
+                  )
+                ])
               ],
             ),
           ),
