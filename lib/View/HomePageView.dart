@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tumbuh/View/InventoryView.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -164,37 +166,28 @@ class HomeView extends StatelessWidget {
                         image: AssetImage('assets/license.png'),
                       ),
                     ),
+                    SizedBox(
+                      width: 20,
+                    ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            top: 36.0,
-                            left: 1,
-                            right: 57,
-                          ),
-                          child: Text(
-                            "Apply for general",
-                            style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 16,
-                                color: Colors.white),
-                          ),
+                        Text(
+                          "Apply for general",
+                          style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                              color: Colors.white),
                         ),
                         SizedBox(
                           height: 2,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                            left: 27,
-                            right: 19,
-                          ),
-                          child: Text(
-                            "Business License",
-                            style: GoogleFonts.poppins(
-                              color: Colors.white,
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
-                            ),
+                        Text(
+                          "Business License",
+                          style: GoogleFonts.poppins(
+                            color: Colors.white,
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold,
                           ),
                         )
                       ],
@@ -229,16 +222,13 @@ class HomeView extends StatelessWidget {
             child: Row(
               children: [
                 Stack(children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 25.0),
-                    child: Container(
-                      height: 172,
-                      width: 265,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(color: Color(0xff0D062D)),
-                        borderRadius: BorderRadius.circular(20),
-                      ),
+                  Container(
+                    height: 172,
+                    width: 265,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Color(0xff0D062D)),
+                      borderRadius: BorderRadius.circular(20),
                     ),
                   ),
                   Padding(
@@ -262,8 +252,13 @@ class HomeView extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 130.0, left: 245),
-                    child: Icon(Icons.edit),
+                    padding: const EdgeInsets.only(top: 128.0, left: 220),
+                    child: IconButton(
+                      onPressed: () {
+                        Get.to(inventoryView());
+                      },
+                      icon: Icon(Icons.edit),
+                    ),
                   )
                 ]),
                 Stack(children: [
