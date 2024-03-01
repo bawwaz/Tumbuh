@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1022318907386",
+    "project_id": "tumbuh-flutter",
+    "storage_bucket": "tumbuh-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022318907386:android:b6c3880bd017b970b29e43",
+        "android_client_info": {
+          "package_name": "com.example.tumbuh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZYon0XwwcdMTgg8rrTBDQfNGdYqjm-3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
