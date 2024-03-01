@@ -3,6 +3,9 @@ import 'package:get/get.dart';
 import 'package:tumbuh/View/HomePageView.dart';
 import 'package:tumbuh/View/InventoryCheck.dart';
 
+import 'package:tumbuh/View/InvetoryHomeView.dart';
+
+
 void main() {
   runApp(const MyApp());
 }
